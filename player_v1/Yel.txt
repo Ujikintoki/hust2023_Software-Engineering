@@ -1,0 +1,111 @@
+/*渐变之色背景色*/
+QMainWindow {
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1.5, y2:0, stop:0 rgba(254, 193, 99, 255), stop:1 rgba(222, 67, 19, 255));
+}
+/*网易云搜索框颜色*/
+QLineEdit#lineEdit
+{
+    background:rgb(255,198,0);
+    border-radius:10px;
+    padding:0px,0px,0px,0px;
+    font-size:14;
+    font-family:"微软雅黑";
+    color:rgb(0,0,0);
+}
+
+/*按键渐变度及颜色设置*/
+/*按键静止时样式*/
+QPushButton{
+        /*带border的为按键边界*/
+	border-style: none;
+	border-width: 2px;
+	border-top-color: qlineargradient(spread:pad, x1:0.5, y1:0.6, x2:0.5, y2:0.4, stop:0 rgba(180, 180, 200, 255), stop:1 rgba(131, 147, 202, 255));
+	border-right-color: qlineargradient(spread:pad, x1:0.4, y1:0.5, x2:0.6, y2:0.5, stop:0 rgba(180, 180, 200, 255), stop:1 rgba(131, 147, 202, 255));
+	border-left-color: qlineargradient(spread:pad, x1:0.6, y1:0.5, x2:0.4, y2:0.5, stop:0 rgba(180, 180, 200, 255), stop:1 rgba(131, 147, 202, 255));
+	border-bottom-color: rgb(131, 147, 202);
+	border-bottom-width: 1px;
+	border-style: none;
+	color: rgb(0, 0, 0);/*字体颜色*/
+        border-radius: 10px;
+	padding: 2px;
+        font-family:"微软雅黑";
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1.5, y2:0, stop:0 rgba(255, 198, 0, 255), stop:1 rgba(255, 198, 0, 255));/*按键填充颜色*/
+}
+/*鼠标悬停按键颜色设置*/
+QPushButton:hover{
+	border-style: none;
+	border-width: 2px;
+	border-top-color: qlineargradient(spread:pad, x1:0.5, y1:0.6, x2:0.5, y2:0.4, stop:0 rgba(180, 180, 200, 255), stop:1 rgba(75, 100, 200, 255));
+	border-right-color: qlineargradient(spread:pad, x1:0.4, y1:0.5, x2:0.6, y2:0.5, stop:0 rgba(180, 180, 200, 255), stop:1 rgba(75, 100, 200, 255));
+	border-left-color: qlineargradient(spread:pad, x1:0.6, y1:0.5, x2:0.4, y2:0.5, stop:0 rgba(180, 180, 200, 255), stop:1 rgba(75, 100, 200, 255));
+	border-bottom-color: rgb(75, 100, 200);
+	border-bottom-width: 1px;
+	border-style: none;
+	color: rgb(0,0,0);
+	padding: 2px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 212, 64, 255), stop:1 rgba(255, 212, 64, 255));
+}
+/*鼠标按压按键颜色设置*/
+QPushButton:pressed{
+	border-style: none;
+	border-width: 2px;
+	border-top-color: qlineargradient(spread:pad, x1:0.5, y1:0.6, x2:0.5, y2:0.4, stop:0 rgba(56, 85, 200, 255), stop:1 rgba(75, 100, 200, 255));
+	border-right-color: qlineargradient(spread:pad, x1:0.4, y1:0.5, x2:0.6, y2:0.5, stop:0 rgba(56, 85, 200, 255), stop:1 rgba(75, 100, 200, 255));
+	border-left-color: qlineargradient(spread:pad, x1:0.6, y1:0.5, x2:0.4, y2:0.5, stop:0 rgba(56, 85, 200, 255), stop:1 rgba(75, 100, 200, 255));
+	border-bottom-color: rgb(56, 85, 200, 255);
+	border-bottom-width: 1px;
+	border-style: none;
+	color: rgb(0, 0, 0);
+	padding: 2px;
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(222, 67, 19,255), stop:1 rgba(222, 67, 19,255));
+}
+/*鼠标点击确定后按键颜色，目前没用
+QPushButton:disabled{
+	border-style: outset;
+	border-width: 2px;
+	border-top-color: qlineargradient(spread:pad, x1:0.5, y1:0.6, x2:0.5, y2:0.4, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));
+	border-right-color: qlineargradient(spread:pad, x1:0.4, y1:0.5, x2:0.6, y2:0.5, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));
+	border-left-color: qlineargradient(spread:pad, x1:0.6, y1:0.5, x2:0.4, y2:0.5, stop:0 rgba(115, 115, 115, 255), stop:1 rgba(62, 62, 62, 255));
+	border-bottom-color: rgb(58, 58, 58);
+	border-bottom-width: 1px;
+	border-style: solid;
+	color: rgb(0, 0, 0);
+	padding: 2px;
+	background-color: qlineargradient(spread:pad, x1:0.5, y1:1, x2:0.5, y2:0, stop:0 rgba(57, 57, 57, 255), stop:1 rgba(77, 77, 77, 255));
+}*/
+
+/*网易云音乐播放条*/
+QSlider::add-page:Horizontal#processSlider
+{
+        background-color: rgb(205,205,205);height:4px;/*未加载的进度条填充颜色*/
+}
+QSlider::sub-page:Horizontal#processSlider
+{
+        background-color: rgb(222, 67, 19);height:4px;/*已加载的进度条填充颜色*/
+}
+QSlider::handle:Horizontal#processSlider
+{
+        width:14px;image: url(音乐进度点(1).png);margin:-4 px -4px;
+}
+QSlider::groove:Horizontal#processSlider
+{
+        background:rgb(0, 255, 0);height:4px;
+}
+
+/*网易云音量播放条*/
+QSlider::add-page:Horizontal#volumeSlider
+{
+        background-color: rgb(205,205,205);height:4px;
+}
+QSlider::sub-page:Horizontal#volumeSlider
+{
+        background-color: rgb(222, 67, 19);height:4px;
+}
+QSlider::handle:Horizontal#volumeSlider
+{
+        width:14px;image: url(音乐进度点(1).png);margin:-4 px -4px;
+}
+QSlider::groove:Horizontal#volumeSlider
+{
+        background:rgb(0, 255, 0);height:4px;
+}
